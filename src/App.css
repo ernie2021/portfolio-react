@@ -1,6 +1,6 @@
 :root {
   --primary-white: #fff;
-  --primary-darkred: rgb(179, 0, 0);
+  --primary-darkred: rgb(119, 2, 2);
 }
 
 .App {
@@ -44,6 +44,10 @@
 }
 
 /**** NavBar ****/
+nav {
+  z-index: 2;
+}
+
 .logotop {
   width: 11.25rem;
   height: 11.25rem;
@@ -79,4 +83,67 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-darkred);
+}
+
+/**** header ****/
+
+.header-wrapper {
+  position: relative;
+  background: url(background_portfolio.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
+
+/**** typed text ****/
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+
+/**** main offer ****/
+
+.btn-main-offer {
+  border: 1px solid var(--primary-darkred);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin-top: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-darkred);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+
+}
+/**** particles ****/
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
 }
