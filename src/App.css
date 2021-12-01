@@ -155,7 +155,7 @@ nav ul li {
   background: url(background_aboutme.png) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info-aboutme {
@@ -171,9 +171,10 @@ nav ul li {
   margin-top: 3rem;
 }
 
-img {
-  height: 10rem;
-  width: 10rem;
+#imageme {
+  width: 80%;
+  margin: -5px;
+  padding-left: 1rem;
 }
 
 .intro {
@@ -188,7 +189,7 @@ img {
   .intro {
     font-family: "Roboto Mono", monospace;
     text-align: center;
-    font-size: x-large;
+    font-size: large;
     margin: 0 50px;
     color: var(--primary-white);
   }
